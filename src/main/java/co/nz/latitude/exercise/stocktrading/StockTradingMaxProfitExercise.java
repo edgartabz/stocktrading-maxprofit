@@ -4,7 +4,16 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /*
+ * This solution traverses the array only once. Therefore obtaining optimal O(n) complexity.
  * 
+ * Iterating through arrays may not be thread safe. So, the toolkit classes of 
+ * java.util.concurrent.atomic package is used for thread safety during retrieval/setting of 
+ * array values and integers.
+ * 
+ * There are two variables holds important information while traversing the array:
+ * 1. minPrice  - is the smallest integer value detected while iterating the array.
+ * 2. maxProfit - is the biggest integer value detected while computing the difference
+ *                between the current price at the position of the array and the minimum price.
  * 
  */
 public class StockTradingMaxProfitExercise {
