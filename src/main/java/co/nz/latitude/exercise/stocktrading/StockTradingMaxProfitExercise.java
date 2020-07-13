@@ -1,4 +1,4 @@
-package co.nz.latitude.excercise.stocktrading;
+package co.nz.latitude.exercise.stocktrading;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicIntegerArray;
@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
  * 
  * 
  */
-public class StockTradingMaxProfitExcercise {
+public class StockTradingMaxProfitExercise {
 	
 	public int getMaxProfit(int[] stockPrices) {
 
