@@ -5,8 +5,6 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
-import co.nz.latitude.exercise.stocktrading.StockTradingMaxProfitExercise;
-
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class StockTradingMaxProfitExerciseTest {
 
@@ -38,7 +36,7 @@ public class StockTradingMaxProfitExerciseTest {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	public void test_6_ThrowIllegalArgumentException() {
+	public void test_5_ThrowIllegalArgumentException() {
 		program.getMaxProfit(new int[] {109});
 	}
 }
